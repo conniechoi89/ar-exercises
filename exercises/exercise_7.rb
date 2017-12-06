@@ -10,3 +10,15 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+
+def create_store
+  #question = Question.new
+  puts "Which store are you looking for?"
+  response = gets.chomp.to_s
+  #p response
+  Store.create!(name: response).errors?
+
+end
+
+create_store
